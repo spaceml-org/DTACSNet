@@ -1,4 +1,4 @@
 rasterio
 numpy
-torch
+torch>=1.13
 segmentation_models_pytorch
