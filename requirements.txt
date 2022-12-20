@@ -1,0 +1,4 @@
+rasterio
+numpy
+torch
+segmentation_models_pytorch
