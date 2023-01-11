@@ -1,6 +1,8 @@
 # DTACSNet: onboard cloud detection and atmospheric correction with end-to-end deep learning emulators
 
-*Giacomo Acciarini*<sup>§</sup>, *Cesar Aybar*<sup>§</sup>, *Gonzalo Mateo-García*<sup>§</sup>, *Vit Ruzicka*, *Nicolas Longepe*, *Luis Gómez-Chova*,   <sub><sup>*§ equal contribution*</sup></sub>
+*Giacomo Acciarini*<sup>§</sup>, *Cesar Aybar*<sup>§</sup>, *Gonzalo Mateo-García*<sup>§</sup>, *Vit Ruzicka*, *Nicolas Longepe*, *Luis Gómez-Chova*
+
+<sub><sup>*§ equal contribution*</sup></sub>
 
 This repo contains an open implementation to run inference with DTACSNet models for cloud detection and atmospheric correction. The trained models
 provided here are customized to the band configuration that will be available in Phi-Sat-II. **Trained models are released under a** [Creative Commons non-commercial licence](https://creativecommons.org/licenses/by-nc/4.0/legalcode.txt) 
