@@ -14,7 +14,7 @@ See the [inference tutorial](./tutorials/inference.ipynb) for an example of runn
 <img src="example_ac.png" alt="awesome atmospheric correction" width="80%">
 
 ## Example Cloud detection
-<img src="example_sc.png" alt="awesome atmospheric correction" width="80%">
+<img src="example_cd.png" alt="awesome atmospheric correction" width="80%">
 
 ## Acknowledgments
 
