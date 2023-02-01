@@ -10,8 +10,8 @@ provided here are customized to the band configuration that will be available in
 
 See the [inference tutorial](./tutorials/inference.ipynb) for an example of running the model.
 
-## Example Atmospheric Correction
 <img src="example_ac.png" alt="awesome atmospheric correction" width="80%">
+Sample of the atmospheric correction model output
 
 ## Acknowledgments
 
