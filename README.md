@@ -8,10 +8,13 @@ This repo contains an open implementation to run inference with DTACSNet models 
 provided here are customized to the band configuration that will be available in Phi-Sat-II. **This repo and trained models are released under a** [Creative Commons non-commercial licence](https://creativecommons.org/licenses/by-nc/4.0/legalcode.txt) 
 <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc.png" alt="licence" width="60"/>
 
-See the [inference tutorial](./tutorials/inference.ipynb) for an example of running the models.
+See the [inference tutorial](./tutorials/inference.ipynb) for an example of running the model.
 
-<img src="example.png" alt="awesome cloud detection and atmospheric correction" width="80%">
+## Example Atmospheric Correction
+<img src="example_ac.png" alt="awesome atmospheric correction" width="80%">
 
+## Example Cloud detection
+<img src="example_sc.png" alt="awesome atmospheric correction" width="80%">
 
 ## Acknowledgments
 
