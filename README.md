@@ -13,9 +13,6 @@ See the [inference tutorial](./tutorials/inference.ipynb) for an example of runn
 ## Example Atmospheric Correction
 <img src="example_ac.png" alt="awesome atmospheric correction" width="80%">
 
-## Example Cloud detection
-<img src="example_cd.png" alt="awesome atmospheric correction" width="50%">
-
 ## Acknowledgments
 
 DTACSNet has been developed by Trillium Technologies. It has been funded by ESA Cognitive Cloud Computing in Space initiative project number D-TACS I-2022-00380.
