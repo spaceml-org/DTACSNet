@@ -11,7 +11,7 @@ provided here are customized to the band configuration that will be available in
 See the [inference tutorial](./tutorials/inference.ipynb) for an example of running the model.
 
 <img src="example_ac.png" alt="awesome atmospheric correction" width="100%">
-The figure above shows a sample of Sentinel-2 level 1C, atmospheric correction model output and Sentinel-2 level 2A in the RGB (first row) and in the SWIR, NIR, Red (last row) composites.
+The figure above shows a sample of Sentinel-2 level 1C, DTACSNet model output and Sentinel-2 level 2A in the RGB (first row) and in the SWIR, NIR, Red (last row) composites.
 
 ## Acknowledgments
 
