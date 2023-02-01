@@ -1,6 +1,6 @@
 # DTACSNet: onboard cloud detection and atmospheric correction with end-to-end deep learning emulators
 
-*Giacomo Acciarini*<sup>§</sup>, *Cesar Aybar*<sup>§</sup>, *Gonzalo Mateo-García*<sup>§</sup>, *Vit Ruzicka*, *Nicolas Longepe*, *Luis Gómez-Chova*
+*Giacomo Acciarini*<sup>§</sup>, *Cesar Aybar*<sup>§</sup>, *Gonzalo Mateo-García*<sup>§</sup>, *Vit Ruzicka*, *Atilim Gunes Baydim*, *Gabriele Meoni*, *Nicolas Longepe*, *Luis Gómez-Chova*
 
 <sub><sup>*§ equal contribution*</sup></sub>
 
@@ -13,3 +13,6 @@ See the [inference tutorial](./tutorials/inference.ipynb) for an example of runn
 <img src="example.png" alt="awesome cloud detection and atmospheric correction" width="80%">
 
 
+## Acknowledgments
+
+DTACSNet has been developed by Trillium Technologies. It has been funded by ESA Cognitive Cloud Computing in Space initiative project number D-TACS I-2022-00380.
