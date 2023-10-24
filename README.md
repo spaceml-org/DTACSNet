@@ -1,6 +1,6 @@
 # DTACSNet: onboard cloud detection and atmospheric correction with end-to-end deep learning emulators
 
-*Giacomo Acciarini*<sup>§</sup>, *Cesar Aybar*<sup>§</sup>, *Gonzalo Mateo-García*<sup>§</sup>, *Vit Ruzicka*, *Atilim Gunes Baydim*, *Gabriele Meoni*, *Nicolas Longepe*, *Luis Gómez-Chova*
+*Giacomo Acciarini*<sup>§</sup>, *Cesar Aybar*<sup>§</sup>, *Gonzalo Mateo-García*<sup>§</sup>, *Vit Ruzicka*, *Gabriele Meoni*, *Nicolas Longepe*, *Luis Gómez-Chova*
 
 <sub><sup>*§ equal contribution*</sup></sub>
 
@@ -16,3 +16,21 @@ The figure above shows a sample of Sentinel-2 level 1C, DTACSNet model output an
 ## Acknowledgments
 
 DTACSNet has been developed by Trillium Technologies. It has been funded by ESA Cognitive Cloud Computing in Space initiative project number D-TACS I-2022-00380.
+
+## Citation
+
+If you find this work useful for your research, please consider citing:
+
+```
+@inproceedings{mateo-garcia_onboard_2023,
+	title = {Onboard {Cloud} {Detection} and {Atmospheric} {Correction} with {Deep} {Learning} {Emulators}},
+	url = {https://ieeexplore.ieee.org/document/10282605},
+	doi = {10.1109/IGARSS52108.2023.10282605},
+	booktitle = {{IGARSS} 2023 - 2023 {IEEE} {International} {Geoscience} and {Remote} {Sensing} {Symposium}},
+	author = {Mateo-García, Gonzalo and Aybar, Cesar and Acciarini, Giacomo and Růžička, Vít and Meoni, Gabriele and Longépé, Nicolas and Gómez-Chova, Luis},
+	month = jul,
+	year = {2023},
+	note = {ISSN: 2153-7003},
+	pages = {1875--1878}
+}
+```
