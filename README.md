@@ -34,3 +34,45 @@ If you find this work useful for your research, please consider citing:
 	pages = {1875--1878}
 }
 ```
+## More Cloud Detection Viz
+
+**__blue__: thick cloud**
+
+**__yellow__: Cloud shadow**
+
+**__green__: thin cloud**
+
+![image/png](https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/OfuPpQGUqOFyqB26YrlDF.png)
+
+![image/png](https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/5d0nbfVGvUQHuzNUKVqq5.png)
+
+![image/png](https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/b0I0ZAgFwsbUoJOLw5z6E.png)
+
+![image/png](https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/dZlcpUVXi6XJ7Xb0Ig9fm.png)
+
+![image/png](https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/phuSxN81fwl9oP-nck4av.png)
+
+![image/png](https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/ESof9Ota75fTgsT0sYNnl.png)
+
+![image/png](https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/TmKdQ6zwtZnD2xFBi-Jvf.png)
+
+![image/png](https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/-IE4TW5cjrKCOmbI0nq9w.png)
+
+## More Atmospheric Correction Viz
+
+![image/png](https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/t_8CiBDUqBdafIV9w4ylK.png)
+
+![image/png](https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/JMyEEYn3aMJZrz3BDfvXs.png)
+
+![image/png](https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/-8oo6ke6GgRvaadsVrviq.png)
+
+![image/png](https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/fSue-_WxTla3IRH5VplGJ.png)
+
+![image/png](https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/STyfQtbNkdLEx-HBI3V-V.png)
+
+![image/png](https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/RvXFiBDUjd4wQcjz8pSEH.png)
+
+![image/png](https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/IiGIz-W8KMsxuMPeM3Ogh.png)
+
+![image/png](https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/PNco-ihWwqSSLICgOtKsB.png)
+
