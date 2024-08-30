@@ -36,11 +36,9 @@ If you find this work useful for your research, please consider citing:
 ```
 ## More Cloud Detection Viz
 
-**__blue__: thick cloud**
-
-**__yellow__: Cloud shadow**
-
-**__green__: thin cloud**
+![#8db5f0](https://placehold.co/15x15/8db5f0/8db5f0.png) Thick cloud
+![#8df094](https://placehold.co/15x15/8df094/8df094.png) Thin cloud 
+![#fff982](https://placehold.co/15x15/fff982/fff982.png) Cloud shadow
 
 ![image/png](https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/OfuPpQGUqOFyqB26YrlDF.png)
 
