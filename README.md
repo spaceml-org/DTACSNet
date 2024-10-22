@@ -19,7 +19,7 @@ DTACSNet has been developed by Trillium Technologies. It has been funded by ESA 
 
 ## Citation
 
-If you find this work useful for your research, please consider citing:
+If you find this work useful for your research, please consider citing [our work](https://ieeexplore.ieee.org/document/10716772):
 
 ```bibtex
 @ARTICLE{10716772,
@@ -34,19 +34,6 @@ If you find this work useful for your research, please consider citing:
   doi={10.1109/JSTARS.2024.3480520}}
 ```
 
-```
-@inproceedings{mateo-garcia_onboard_2023,
-	title = {Onboard {Cloud} {Detection} and {Atmospheric} {Correction} with {Deep} {Learning} {Emulators}},
-	url = {https://ieeexplore.ieee.org/document/10282605},
-	doi = {10.1109/IGARSS52108.2023.10282605},
-	booktitle = {{IGARSS} 2023 - 2023 {IEEE} {International} {Geoscience} and {Remote} {Sensing} {Symposium}},
-	author = {Mateo-García, Gonzalo and Aybar, Cesar and Acciarini, Giacomo and Růžička, Vít and Meoni, Gabriele and Longépé, Nicolas and Gómez-Chova, Luis},
-	month = jul,
-	year = {2023},
-	note = {ISSN: 2153-7003},
-	pages = {1875--1878}
-}
-```
 ## More Cloud Detection Viz
 
 ![#8db5f0](https://placehold.co/15x15/8db5f0/8db5f0.png) Thick cloud
