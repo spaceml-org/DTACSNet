@@ -21,6 +21,19 @@ DTACSNet has been developed by Trillium Technologies. It has been funded by ESA 
 
 If you find this work useful for your research, please consider citing:
 
+```bibtex
+@ARTICLE{10716772,
+  author={Aybar, Cesar and Mateo-García, Gonzalo and Acciarini, Giacomo and Růžička, Vít and Meoni, Gabriele and Longépé, Nicolas and Gómez-Chova, Luis},
+  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing}, 
+  title={Onboard Cloud Detection and Atmospheric Correction With Efficient Deep Learning Models}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-13},
+  keywords={Clouds;Atmospheric modeling;Reflectivity;Surface treatment;Satellites;Remote sensing;Data models;Training;Optical reflection;Optical imaging;Atmospheric correction;cloud detection;cloudSEN12;deep learning;onboard satellite processing;sentinel-2},
+  doi={10.1109/JSTARS.2024.3480520}}
+```
+
 ```
 @inproceedings{mateo-garcia_onboard_2023,
 	title = {Onboard {Cloud} {Detection} and {Atmospheric} {Correction} with {Deep} {Learning} {Emulators}},
