@@ -1,4 +1,4 @@
-[![Article DOI:10.1109/JSTARS.2024.3480520](https://img.shields.io/badge/Article%20DOI-10.1109%2FJSTARS.2024.3480520-blue)](https://doi.org/10.1109/JSTARS.2024.3480520)
+[![Article DOI:10.1109/JSTARS.2024.3480520](https://img.shields.io/badge/Article%20DOI-10.1109%2FJSTARS.2024.3480520-blue)](https://doi.org/10.1109/JSTARS.2024.3480520) [![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/spaceml-org/DTACSNet?sort=semver)](https://github.com/spaceml-org/DTACSNet/releases) [![PyPI](https://img.shields.io/pypi/v/dtacs)](https://pypi.org/project/dtacs/) [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/dtacs)](https://pypi.org/project/dtacs/) [![PyPI - License](https://img.shields.io/pypi/l/dtacs)](https://github.com/spaceml-org/DTACSNet/blob/main/LICENSE) [![docs](https://badgen.net/badge/docs/spaceml-org.github.io%2FDTACSNet/blue)](https://spaceml-org.github.io/DTACSNet/)
 
 # [DTACSNet: Onboard Cloud Detection and Atmospheric Correction With Efficient Deep Learning Models](https://ieeexplore.ieee.org/document/10716772)
 
