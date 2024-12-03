@@ -1,4 +1,6 @@
-# DTACSNet: onboard cloud detection and atmospheric correction with end-to-end deep learning emulators
+[![Article DOI:10.1109/JSTARS.2024.3480520](https://img.shields.io/badge/Article%20DOI-10.1109%2FJSTARS.2024.3480520-blue)](https://doi.org/10.1109/JSTARS.2024.3480520)
+
+# [DTACSNet: Onboard Cloud Detection and Atmospheric Correction With Efficient Deep Learning Models](https://ieeexplore.ieee.org/document/10716772)
 
 *Cesar Aybar*<sup>§</sup>, *Gonzalo Mateo-García*<sup>§</sup>, *Giacomo Acciarini*<sup>§</sup>, *Vit Ruzicka*, *Gabriele Meoni*, *Nicolas Longepe*, *Luis Gómez-Chova*
 
@@ -8,9 +10,12 @@ This repo contains an open implementation to run inference with DTACSNet models 
 provided here are customized to the band configuration that will be available in Phi-Sat-II. **This repo and trained models are released under a** [Creative Commons non-commercial licence](https://creativecommons.org/licenses/by-nc/4.0/legalcode.txt) 
 <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc.png" alt="licence" width="60"/>
 
-See the [inference tutorial](https://github.com/spaceml-org/DTACSNet/blob/main/tutorials/inference_Sentinel-2.ipynb) for an example of running the model.
+Install ⚙️:
+```bash
+pip install dtacs
+```
 
-<img src="example_ac.png" alt="awesome atmospheric correction" width="100%">
+<img src="assets/example_ac.png" alt="awesome atmospheric correction" width="100%">
 The figure above shows a sample of Sentinel-2 level 1C, DTACSNet model output and Sentinel-2 level 2A in the RGB (first row) and in the SWIR, NIR, Red (last row) composites.
 
 ## Acknowledgments

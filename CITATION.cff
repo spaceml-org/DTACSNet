@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Mateo-Garcia"
+  given-names: "Gonzalo"
+  orcid: "https://orcid.org/0000-0002-0569-393X"
+  affiliation: "Universitat de Valencia"
+title: "dtacs"
+version: 1.0.9
+doi: 10.1109/JSTARS.2024.3480520
+date-released: 2024-12-01
+url: "https://github.com/spaceml-org/DTACSNet"
