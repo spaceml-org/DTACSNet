@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dtacs"
-version = "1.0"
+version = "1.0.1"
 description = "🛰️ Cloud Detection and Atmospheric Correction With Efficient Deep Learning Models"
 authors = ["Gonzalo Mateo-García", "Cesar Aybar", "Giacomo Acciarini"]
 repository = "https://github.com/spaceml-org/DTACSNet"
