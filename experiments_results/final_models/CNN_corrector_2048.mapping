@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<mapping>
+	<map>
+		<framework name="input" output_port_id="input" />
+		<IR name="input" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="Constant_3" output_port_id="8" />
+		<IR name="Constant_3" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="Gather_4" output_port_id="9" />
+		<IR name="Gather_4" output_port_id="3" />
+	</map>
+	<map>
+		<framework name="model.cnn_layers.0.weight" output_port_id="model.cnn_layers.0.weight" />
+		<IR name="model.cnn_layers.0.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_0" output_port_id="5" />
+		<IR name="Conv_0" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Relu_1" output_port_id="6" />
+		<IR name="Relu_1" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="model.cnn_layers.2.weight" output_port_id="model.cnn_layers.2.weight" />
+		<IR name="model.cnn_layers.2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_2" output_port_id="7" />
+		<IR name="Conv_2" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="output" output_port_id="output" />
+		<IR name="output" output_port_id="2" />
+	</map>
+</mapping>

@@ -2,18 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://spaceml-org.github.io/DTACSNet/index.html</loc>
-         <lastmod>2024-12-03</lastmod>
-    </url>
-    <url>
-         <loc>https://spaceml-org.github.io/DTACSNet/models/index.html</loc>
-         <lastmod>2024-12-03</lastmod>
+         <lastmod>2024-12-04</lastmod>
     </url>
     <url>
          <loc>https://spaceml-org.github.io/DTACSNet/tutorials/inference-Phi-Sat-II.html</loc>
-         <lastmod>2024-12-03</lastmod>
+         <lastmod>2024-12-04</lastmod>
     </url>
     <url>
          <loc>https://spaceml-org.github.io/DTACSNet/tutorials/inference_Sentinel-2.html</loc>
-         <lastmod>2024-12-03</lastmod>
+         <lastmod>2024-12-04</lastmod>
     </url>
 </urlset>

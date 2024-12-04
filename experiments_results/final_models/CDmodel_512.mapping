@@ -1,0 +1,719 @@
+<?xml version="1.0"?>
+<mapping>
+	<map>
+		<framework name="input" output_port_id="input" />
+		<IR name="input" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="655" output_port_id="655" />
+		<IR name="655" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_0" output_port_id="654" />
+		<IR name="Conv_0" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_3" output_port_id="379" />
+		<IR name="Clip_3" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_4" output_port_id="657" />
+		<IR name="Conv_4" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_7" output_port_id="384" />
+		<IR name="Clip_7" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="661" output_port_id="661" />
+		<IR name="661" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_8" output_port_id="660" />
+		<IR name="Conv_8" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="664" output_port_id="664" />
+		<IR name="664" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_9" output_port_id="663" />
+		<IR name="Conv_9" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_12" output_port_id="391" />
+		<IR name="Clip_12" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_13" output_port_id="666" />
+		<IR name="Conv_13" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_16" output_port_id="396" />
+		<IR name="Clip_16" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="670" output_port_id="670" />
+		<IR name="670" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_17" output_port_id="669" />
+		<IR name="Conv_17" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="673" output_port_id="673" />
+		<IR name="673" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_18" output_port_id="672" />
+		<IR name="Conv_18" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_21" output_port_id="403" />
+		<IR name="Clip_21" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_22" output_port_id="675" />
+		<IR name="Conv_22" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_25" output_port_id="408" />
+		<IR name="Clip_25" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="679" output_port_id="679" />
+		<IR name="679" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_26" output_port_id="678" />
+		<IR name="Conv_26" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Add_27" output_port_id="411" />
+		<IR name="Add_27" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="682" output_port_id="682" />
+		<IR name="682" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_28" output_port_id="681" />
+		<IR name="Conv_28" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_31" output_port_id="416" />
+		<IR name="Clip_31" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_32" output_port_id="684" />
+		<IR name="Conv_32" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_35" output_port_id="421" />
+		<IR name="Clip_35" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="688" output_port_id="688" />
+		<IR name="688" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_36" output_port_id="687" />
+		<IR name="Conv_36" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="691" output_port_id="691" />
+		<IR name="691" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_37" output_port_id="690" />
+		<IR name="Conv_37" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_40" output_port_id="428" />
+		<IR name="Clip_40" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_41" output_port_id="693" />
+		<IR name="Conv_41" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_44" output_port_id="433" />
+		<IR name="Clip_44" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="697" output_port_id="697" />
+		<IR name="697" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_45" output_port_id="696" />
+		<IR name="Conv_45" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Add_46" output_port_id="436" />
+		<IR name="Add_46" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="700" output_port_id="700" />
+		<IR name="700" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_47" output_port_id="699" />
+		<IR name="Conv_47" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_50" output_port_id="441" />
+		<IR name="Clip_50" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_51" output_port_id="702" />
+		<IR name="Conv_51" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_54" output_port_id="446" />
+		<IR name="Clip_54" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="706" output_port_id="706" />
+		<IR name="706" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_55" output_port_id="705" />
+		<IR name="Conv_55" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Add_56" output_port_id="449" />
+		<IR name="Add_56" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="709" output_port_id="709" />
+		<IR name="709" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_57" output_port_id="708" />
+		<IR name="Conv_57" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_60" output_port_id="454" />
+		<IR name="Clip_60" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_61" output_port_id="711" />
+		<IR name="Conv_61" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_64" output_port_id="459" />
+		<IR name="Clip_64" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="715" output_port_id="715" />
+		<IR name="715" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_65" output_port_id="714" />
+		<IR name="Conv_65" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="718" output_port_id="718" />
+		<IR name="718" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_66" output_port_id="717" />
+		<IR name="Conv_66" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_69" output_port_id="466" />
+		<IR name="Clip_69" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_70" output_port_id="720" />
+		<IR name="Conv_70" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_73" output_port_id="471" />
+		<IR name="Clip_73" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="724" output_port_id="724" />
+		<IR name="724" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_74" output_port_id="723" />
+		<IR name="Conv_74" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Add_75" output_port_id="474" />
+		<IR name="Add_75" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="727" output_port_id="727" />
+		<IR name="727" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_76" output_port_id="726" />
+		<IR name="Conv_76" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_79" output_port_id="479" />
+		<IR name="Clip_79" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_80" output_port_id="729" />
+		<IR name="Conv_80" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_83" output_port_id="484" />
+		<IR name="Clip_83" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="733" output_port_id="733" />
+		<IR name="733" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_84" output_port_id="732" />
+		<IR name="Conv_84" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Add_85" output_port_id="487" />
+		<IR name="Add_85" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="736" output_port_id="736" />
+		<IR name="736" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_86" output_port_id="735" />
+		<IR name="Conv_86" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_89" output_port_id="492" />
+		<IR name="Clip_89" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_90" output_port_id="738" />
+		<IR name="Conv_90" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_93" output_port_id="497" />
+		<IR name="Clip_93" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="742" output_port_id="742" />
+		<IR name="742" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_94" output_port_id="741" />
+		<IR name="Conv_94" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Add_95" output_port_id="500" />
+		<IR name="Add_95" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="745" output_port_id="745" />
+		<IR name="745" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_96" output_port_id="744" />
+		<IR name="Conv_96" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_99" output_port_id="505" />
+		<IR name="Clip_99" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_100" output_port_id="747" />
+		<IR name="Conv_100" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_103" output_port_id="510" />
+		<IR name="Clip_103" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="751" output_port_id="751" />
+		<IR name="751" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_104" output_port_id="750" />
+		<IR name="Conv_104" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="754" output_port_id="754" />
+		<IR name="754" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_105" output_port_id="753" />
+		<IR name="Conv_105" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_108" output_port_id="517" />
+		<IR name="Clip_108" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_109" output_port_id="756" />
+		<IR name="Conv_109" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_112" output_port_id="522" />
+		<IR name="Clip_112" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="760" output_port_id="760" />
+		<IR name="760" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_113" output_port_id="759" />
+		<IR name="Conv_113" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Add_114" output_port_id="525" />
+		<IR name="Add_114" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="763" output_port_id="763" />
+		<IR name="763" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_115" output_port_id="762" />
+		<IR name="Conv_115" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_118" output_port_id="530" />
+		<IR name="Clip_118" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_119" output_port_id="765" />
+		<IR name="Conv_119" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_122" output_port_id="535" />
+		<IR name="Clip_122" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="769" output_port_id="769" />
+		<IR name="769" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_123" output_port_id="768" />
+		<IR name="Conv_123" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Add_124" output_port_id="538" />
+		<IR name="Add_124" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="772" output_port_id="772" />
+		<IR name="772" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_125" output_port_id="771" />
+		<IR name="Conv_125" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_128" output_port_id="543" />
+		<IR name="Clip_128" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_129" output_port_id="774" />
+		<IR name="Conv_129" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_132" output_port_id="548" />
+		<IR name="Clip_132" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="778" output_port_id="778" />
+		<IR name="778" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_133" output_port_id="777" />
+		<IR name="Conv_133" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="781" output_port_id="781" />
+		<IR name="781" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_134" output_port_id="780" />
+		<IR name="Conv_134" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_137" output_port_id="555" />
+		<IR name="Clip_137" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_138" output_port_id="783" />
+		<IR name="Conv_138" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_141" output_port_id="560" />
+		<IR name="Clip_141" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="787" output_port_id="787" />
+		<IR name="787" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_142" output_port_id="786" />
+		<IR name="Conv_142" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Add_143" output_port_id="563" />
+		<IR name="Add_143" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="790" output_port_id="790" />
+		<IR name="790" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_144" output_port_id="789" />
+		<IR name="Conv_144" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_147" output_port_id="568" />
+		<IR name="Clip_147" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_148" output_port_id="792" />
+		<IR name="Conv_148" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_151" output_port_id="573" />
+		<IR name="Clip_151" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="796" output_port_id="796" />
+		<IR name="796" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_152" output_port_id="795" />
+		<IR name="Conv_152" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Add_153" output_port_id="576" />
+		<IR name="Add_153" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="799" output_port_id="799" />
+		<IR name="799" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_154" output_port_id="798" />
+		<IR name="Conv_154" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_157" output_port_id="581" />
+		<IR name="Clip_157" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_158" output_port_id="801" />
+		<IR name="Conv_158" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_161" output_port_id="586" />
+		<IR name="Clip_161" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="805" output_port_id="805" />
+		<IR name="805" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_162" output_port_id="804" />
+		<IR name="Conv_162" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="808" output_port_id="808" />
+		<IR name="808" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_163" output_port_id="807" />
+		<IR name="Conv_163" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Clip_166" output_port_id="593" />
+		<IR name="Clip_166" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="840" output_port_id="840" />
+		<IR name="840" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="Resize_168" output_port_id="598" />
+		<IR name="Resize_168" output_port_id="3" />
+	</map>
+	<map>
+		<framework name="Concat_169" output_port_id="599" />
+		<IR name="Concat_169" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="811" output_port_id="811" />
+		<IR name="811" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_170" output_port_id="810" />
+		<IR name="Conv_170" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Relu_171" output_port_id="602" />
+		<IR name="Relu_171" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="814" output_port_id="814" />
+		<IR name="814" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_172" output_port_id="813" />
+		<IR name="Conv_172" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Relu_173" output_port_id="605" />
+		<IR name="Relu_173" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="841" output_port_id="841" />
+		<IR name="841" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="Resize_175" output_port_id="610" />
+		<IR name="Resize_175" output_port_id="3" />
+	</map>
+	<map>
+		<framework name="Concat_176" output_port_id="611" />
+		<IR name="Concat_176" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="817" output_port_id="817" />
+		<IR name="817" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_177" output_port_id="816" />
+		<IR name="Conv_177" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Relu_178" output_port_id="614" />
+		<IR name="Relu_178" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="820" output_port_id="820" />
+		<IR name="820" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_179" output_port_id="819" />
+		<IR name="Conv_179" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Relu_180" output_port_id="617" />
+		<IR name="Relu_180" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="842" output_port_id="842" />
+		<IR name="842" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="Resize_182" output_port_id="622" />
+		<IR name="Resize_182" output_port_id="3" />
+	</map>
+	<map>
+		<framework name="Concat_183" output_port_id="623" />
+		<IR name="Concat_183" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="823" output_port_id="823" />
+		<IR name="823" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_184" output_port_id="822" />
+		<IR name="Conv_184" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Relu_185" output_port_id="626" />
+		<IR name="Relu_185" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="826" output_port_id="826" />
+		<IR name="826" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_186" output_port_id="825" />
+		<IR name="Conv_186" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Relu_187" output_port_id="629" />
+		<IR name="Relu_187" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="843" output_port_id="843" />
+		<IR name="843" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="Resize_189" output_port_id="634" />
+		<IR name="Resize_189" output_port_id="3" />
+	</map>
+	<map>
+		<framework name="Concat_190" output_port_id="635" />
+		<IR name="Concat_190" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="829" output_port_id="829" />
+		<IR name="829" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_191" output_port_id="828" />
+		<IR name="Conv_191" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Relu_192" output_port_id="638" />
+		<IR name="Relu_192" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="832" output_port_id="832" />
+		<IR name="832" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_193" output_port_id="831" />
+		<IR name="Conv_193" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Relu_194" output_port_id="641" />
+		<IR name="Relu_194" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="844" output_port_id="844" />
+		<IR name="844" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="Resize_196" output_port_id="646" />
+		<IR name="Resize_196" output_port_id="3" />
+	</map>
+	<map>
+		<framework name="835" output_port_id="835" />
+		<IR name="835" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_197" output_port_id="834" />
+		<IR name="Conv_197" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Relu_198" output_port_id="649" />
+		<IR name="Relu_198" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="838" output_port_id="838" />
+		<IR name="838" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Conv_199" output_port_id="837" />
+		<IR name="Conv_199" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Relu_200" output_port_id="652" />
+		<IR name="Relu_200" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="segmentation_head.0.weight" output_port_id="segmentation_head.0.weight" />
+		<IR name="segmentation_head.0.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="output" output_port_id="output" />
+		<IR name="output" output_port_id="2" />
+	</map>
+</mapping>

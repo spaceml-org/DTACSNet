@@ -492,18 +492,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#acknowledgments" class="md-nav__link">
+  <a href="#citation" class="md-nav__link">
     <span class="md-ellipsis">
-      Acknowledgments
+      Citation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#citation" class="md-nav__link">
+  <a href="#acknowledgments" class="md-nav__link">
     <span class="md-ellipsis">
-      Citation
+      Acknowledgments
     </span>
   </a>
   
@@ -545,20 +545,25 @@
   
 
 
-<p><a href="https://doi.org/10.1109/JSTARS.2024.3480520"><img alt="Article DOI:10.1109/JSTARS.2024.3480520" src="https://img.shields.io/badge/Article%20DOI-10.1109%2FJSTARS.2024.3480520-blue" /></a></p>
+<p><a href="https://doi.org/10.1109/JSTARS.2024.3480520"><img alt="Article DOI:10.1109/JSTARS.2024.3480520" src="https://img.shields.io/badge/Article%20DOI-10.1109%2FJSTARS.2024.3480520-blue" /></a> <a href="https://github.com/spaceml-org/DTACSNet/releases"><img alt="GitHub release (latest SemVer including pre-releases)" src="https://img.shields.io/github/v/release/spaceml-org/DTACSNet?sort=semver" /></a> <a href="https://pypi.org/project/dtacs/"><img alt="PyPI" src="https://img.shields.io/pypi/v/dtacs" /></a> <a href="https://pypi.org/project/dtacs/"><img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/dtacs" /></a> <a href="https://github.com/spaceml-org/DTACSNet/blob/main/LICENSE"><img alt="PyPI - License" src="https://img.shields.io/pypi/l/dtacs" /></a> <a href="https://spaceml-org.github.io/DTACSNet/"><img alt="docs" src="https://badgen.net/badge/docs/spaceml-org.github.io%2FDTACSNet/blue" /></a></p>
 <h1 id="dtacsnet-onboard-cloud-detection-and-atmospheric-correction-with-efficient-deep-learning-models"><a href="https://ieeexplore.ieee.org/document/10716772">DTACSNet: Onboard Cloud Detection and Atmospheric Correction With Efficient Deep Learning Models</a></h1>
-<p><em>Cesar Aybar</em><sup>§</sup>, <em>Gonzalo Mateo-García</em><sup>§</sup>, <em>Giacomo Acciarini</em><sup>§</sup>, <em>Vit Ruzicka</em>, <em>Gabriele Meoni</em>, <em>Nicolas Longepe</em>, <em>Luis Gómez-Chova</em></p>
-<p><sub><sup><em>§ development contribution</em></sup></sub></p>
-<p>This repo contains an open implementation to run inference with DTACSNet models for atmospheric correction. The trained models
-provided here are customized to the band configuration that will be available in Phi-Sat-II. <strong>This repo and trained models are released under a</strong> <a href="https://creativecommons.org/licenses/by-nc/4.0/legalcode.txt">Creative Commons non-commercial licence</a> 
+<p><em>Cesar Aybar</em><sup>§</sup>, <em>Gonzalo Mateo-García</em><sup>§</sup>, <em>Giacomo Acciarini</em><sup>§</sup>, <em>Vit Ruzicka</em>, <em>Gabriele Meoni</em>, <em>Nicolas Longepe</em>, <em>Luis Gómez-Chova</em> <sub><sup><em>§ development contribution</em></sup></sub></p>
+<p><a href="https://ieeexplore.ieee.org/document/10716772">10.1109/JSTARS.2024.3480520</a></p>
+<p>This repo contains an open implementation to run inference with DTACSNet models for atmospheric correction. <strong>This repo and trained models are released under a</strong> <a href="https://creativecommons.org/licenses/by-nc/4.0/legalcode.txt">Creative Commons non-commercial licence</a> 
 <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc.png" alt="licence" width="60"/></p>
 <p>Install ⚙️:
 <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>dtacs
 </code></pre></div></p>
+<p>Run:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">dtacs.model_wrapper</span> <span class="kn">import</span> <span class="n">ACModel</span>
+<span class="n">model_atmospheric_correction</span> <span class="o">=</span> <span class="n">ACModel</span><span class="p">(</span><span class="n">model_name</span><span class="o">=</span><span class="s2">&quot;CNN_corrector_phisat2&quot;</span><span class="p">)</span>
+<span class="n">model_atmospheric_correction</span><span class="o">.</span><span class="n">load_weights</span><span class="p">()</span>
+
+<span class="n">ac_output</span> <span class="o">=</span> <span class="n">model_atmospheric_correction</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">l1c_toa_s2</span><span class="p">)</span>
+</code></pre></div>
 <p><img src="assets/example_ac.png" alt="awesome atmospheric correction" width="100%">
 The figure above shows a sample of Sentinel-2 level 1C, DTACSNet model output and Sentinel-2 level 2A in the RGB (first row) and in the SWIR, NIR, Red (last row) composites.</p>
-<h2 id="acknowledgments">Acknowledgments</h2>
-<p>DTACSNet has been developed by Trillium Technologies. It has been funded by ESA Cognitive Cloud Computing in Space initiative project number D-TACS I-2022-00380.</p>
+<p>See the <a href="https://spaceml-org.github.io/DTACSNet/tutorials/inference_Sentinel-2.html">inference tutorial</a> for a complete example.</p>
 <h2 id="citation">Citation</h2>
 <p>If you find this work useful for your research, please consider citing <a href="https://ieeexplore.ieee.org/document/10716772">our work</a>:</p>
 <div class="highlight"><pre><span></span><code><span class="nc">@article</span><span class="p">{</span><span class="nl">aybar_onboard_2024</span><span class="p">,</span>
@@ -575,6 +580,8 @@ The figure above shows a sample of Sentinel-2 level 1C, DTACSNet model output an
 <span class="w">    </span><span class="na">pages</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{19518--19529}</span>
 <span class="p">}</span>
 </code></pre></div>
+<h2 id="acknowledgments">Acknowledgments</h2>
+<p>DTACSNet has been developed by Trillium Technologies. It has been funded by ESA Cognitive Cloud Computing in Space initiative project number D-TACS I-2022-00380.</p>
 <h2 id="more-cloud-detection-viz">More Cloud Detection Viz</h2>
 <p><img alt="#8db5f0" src="https://placehold.co/15x15/8db5f0/8db5f0.png" /> Thick cloud
 <img alt="#8df094" src="https://placehold.co/15x15/8df094/8df094.png" /> Thin cloud 
