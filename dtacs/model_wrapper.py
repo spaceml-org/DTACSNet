@@ -5,8 +5,12 @@ import segmentation_models_pytorch as smp
 import numpy as np
 from dtacs import nn
 from dtacs.download_weights import download_weights
-from georeader.readers import S2_SAFE_reader
 import os
+
+BANDS_S2_L1C =  ["B01", "B02","B03", "B04", "B05", "B06",
+                 "B07", "B08", "B8A", "B09", "B10", "B11", "B12"]
+BANDS_S2_L2A = ["B01", "B02","B03", "B04", "B05", "B06",
+                "B07", "B08", "B8A", "B09", "B11", "B12"]
 
 MODELS ={
     "CNN_corrector": "https://",
@@ -58,8 +62,8 @@ class ACModel:
                 input_bands = ["B02", "B04", "B08", "B11"]
                 output_bands = list(input_bands)
             else:
-                input_bands = S2_SAFE_reader.BANDS_S2_L1C
-                output_bands = S2_SAFE_reader.BANDS_S2_L2A
+                input_bands = list(BANDS_S2_L1C)
+                output_bands = list(BANDS_S2_L2A)
         elif input_bands is None or output_bands is None:
             raise ValueError("Both input_bands and output_bands must be provided or none of them")
 

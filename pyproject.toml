@@ -14,7 +14,6 @@ packages = [
 python = ">=3.10,<4.0"
 rasterio = ">=1"
 numpy = ">=1"
-georeader-spaceml = ">=1.3"
 torch = "^2.5.1"
 segmentation-models-pytorch = "^0.3.4"
 tqdm = "^4.67.1"
