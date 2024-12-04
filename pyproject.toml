@@ -6,6 +6,7 @@ authors = ["Gonzalo Mateo-García", "Cesar Aybar", "Giacomo Acciarini"]
 repository = "https://github.com/spaceml-org/DTACSNet"
 documentation = "https://spaceml-org.github.io/DTACSNet/"
 readme = "README.md"
+license = "	GPL-3.0"
 packages = [
   {include = "dtacs"}
 ]

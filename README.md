@@ -2,12 +2,11 @@
 
 # [DTACSNet: Onboard Cloud Detection and Atmospheric Correction With Efficient Deep Learning Models](https://ieeexplore.ieee.org/document/10716772)
 
-*Cesar Aybar*<sup>§</sup>, *Gonzalo Mateo-García*<sup>§</sup>, *Giacomo Acciarini*<sup>§</sup>, *Vit Ruzicka*, *Gabriele Meoni*, *Nicolas Longepe*, *Luis Gómez-Chova*
+*Cesar Aybar*<sup>§</sup>, *Gonzalo Mateo-García*<sup>§</sup>, *Giacomo Acciarini*<sup>§</sup>, *Vit Ruzicka*, *Gabriele Meoni*, *Nicolas Longepe*, *Luis Gómez-Chova* <sub><sup>*§ development contribution*</sup></sub>
 
-<sub><sup>*§ development contribution*</sup></sub>
+[10.1109/JSTARS.2024.3480520](https://ieeexplore.ieee.org/document/10716772)
 
-This repo contains an open implementation to run inference with DTACSNet models for atmospheric correction. The trained models
-provided here are customized to the band configuration that will be available in Phi-Sat-II. **This repo and trained models are released under a** [Creative Commons non-commercial licence](https://creativecommons.org/licenses/by-nc/4.0/legalcode.txt) 
+This repo contains an open implementation to run inference with DTACSNet models for atmospheric correction. **This repo and trained models are released under a** [Creative Commons non-commercial licence](https://creativecommons.org/licenses/by-nc/4.0/legalcode.txt) 
 <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc.png" alt="licence" width="60"/>
 
 Install ⚙️:
@@ -15,12 +14,21 @@ Install ⚙️:
 pip install dtacs
 ```
 
+Run:
+
+```python
+from dtacs.model_wrapper import ACModel
+model_atmospheric_correction = ACModel(model_name="CNN_corrector_phisat2")
+model_atmospheric_correction.load_weights()
+
+ac_output = model_atmospheric_correction.predict(l1c_toa_s2)
+```
+
 <img src="assets/example_ac.png" alt="awesome atmospheric correction" width="100%">
 The figure above shows a sample of Sentinel-2 level 1C, DTACSNet model output and Sentinel-2 level 2A in the RGB (first row) and in the SWIR, NIR, Red (last row) composites.
 
-## Acknowledgments
+See the [inference tutorial](https://spaceml-org.github.io/DTACSNet/tutorials/inference_Sentinel-2.html) for a complete example.
 
-DTACSNet has been developed by Trillium Technologies. It has been funded by ESA Cognitive Cloud Computing in Space initiative project number D-TACS I-2022-00380.
 
 ## Citation
 
@@ -41,6 +49,10 @@ If you find this work useful for your research, please consider citing [our work
 	pages = {19518--19529}
 }
 ```
+
+## Acknowledgments
+
+DTACSNet has been developed by Trillium Technologies. It has been funded by ESA Cognitive Cloud Computing in Space initiative project number D-TACS I-2022-00380.
 
 ## More Cloud Detection Viz
 
