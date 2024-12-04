@@ -4,7 +4,21 @@ import torch
 import segmentation_models_pytorch as smp
 import numpy as np
 from dtacs import nn
+from dtacs.download_weights import download_weights
+from georeader.readers import S2_SAFE_reader
+import os
 
+MODELS ={
+    "CNN_corrector": "https://",
+    "CNN_corrector_phisat2": "https://",
+    "CNN_corrector_planetscope": "https://",
+    "CNN_corrector_probav": "https://",
+    "Unet_corrector": "https://",
+    "Unet_corrector_phisat2": "https://",
+    "Unet_corrector_planetscope": "https://",
+    "Unet_corrector_probav": "https://",
+    "Linear": "https://", # run_SimpleCNN
+}
 
 def find_padding(v:int, divisor=32) -> Tuple[Tuple[int, int],slice]:
     v_divisible = max(divisor, int(divisor * math.ceil(v / divisor)))
@@ -14,21 +28,64 @@ def find_padding(v:int, divisor=32) -> Tuple[Tuple[int, int],slice]:
     slice_rows = slice(pad_1, None if pad_2 <= 0 else -pad_2)
     return (pad_1, pad_2), slice_rows
 
+# ~/.dtacs/
+DIR_MODELS_LOCAL = os.path.expanduser("~/.dtacs/")
 
 class ACModel:
-    def __init__(self, input_bands:List[str], output_bands:List[str], device:torch.device=torch.device("cpu"),):
+    def __init__(self, model_name:str, input_bands:Optional[List[str]]=None, output_bands:Optional[List[str]]=None, 
+                 device:torch.device=torch.device("cpu"), dir_models:Optional[str]=DIR_MODELS_LOCAL):
         super().__init__()
 
-        self.model = nn.load_model("CNN",
+        if model_name not in MODELS:
+            raise ValueError(f"Model {model_name} not found in MODELS. Available models: {list(MODELS.keys())}")
+        
+        if model_name == "Linear":
+            model_to_load = "SimpleCNN"
+            corrector = False
+        else:
+            model_to_load = model_name.split("_")[0]
+            corrector = True
+        if input_bands is None and output_bands is None:
+            if "phisat2" in model_name:
+                # B2, B3, B4, B5, B6, B7, and B8
+                input_bands = ["B02", "B03", "B04", "B05", "B06", "B07", "B08"]
+                output_bands = list(input_bands)
+            elif "planetscope" in model_name:
+                # B2, B3, B4, and B8
+                input_bands = ["B02", "B03", "B04", "B08"]
+                output_bands = list(input_bands)
+            elif "probav" in model_name:
+                input_bands = ["B02", "B04", "B08", "B11"]
+                output_bands = list(input_bands)
+            else:
+                input_bands = S2_SAFE_reader.BANDS_S2_L1C
+                output_bands = S2_SAFE_reader.BANDS_S2_L2A
+        elif input_bands is None or output_bands is None:
+            raise ValueError("Both input_bands and output_bands must be provided or none of them")
+
+        self.input_bands = input_bands
+        self.output_bands = output_bands
+        self.model_name = model_name
+        self.model_to_load = model_to_load
+        self.dir_models = dir_models
+        self.corrector = corrector
+
+        self.model = nn.load_model(model_to_load,
                                    input_bands, output_bands,
-                                   corrector=True)
+                                   corrector=corrector)
         self.device = device
         self.model.eval()
         self.model.to(self.device)
 
-    def load_weights(self, path:str):
+    def load_weights(self, path:Optional[str]=None):
+        if path is None:
+            path = os.path.join(self.dir_models, self.model_name+".pt")
+            if not os.path.exists(path):
+                download_weights(path, MODELS[self.model_name])
+        
         with open(path,"rb") as fh:
             weights =  torch.load(fh, map_location=self.device)
+        
         self.model.load_state_dict(weights["state_dict"])
 
     def predict(self, tensor: np.array) -> np.array:
