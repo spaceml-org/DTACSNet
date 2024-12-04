@@ -13,15 +13,15 @@ BANDS_S2_L2A = ["B01", "B02","B03", "B04", "B05", "B06",
                 "B07", "B08", "B8A", "B09", "B11", "B12"]
 
 MODELS ={
-    "CNN_corrector": "https://",
-    "CNN_corrector_phisat2": "https://",
-    "CNN_corrector_planetscope": "https://",
-    "CNN_corrector_probav": "https://",
-    "Unet_corrector": "https://",
-    "Unet_corrector_phisat2": "https://",
-    "Unet_corrector_planetscope": "https://",
-    "Unet_corrector_probav": "https://",
-    "Linear": "https://", # run_SimpleCNN
+    "CNN_corrector": "https://github.com/spaceml-org/DTACSNet/releases/download/v1.0/CNN_corrector.pt",
+    "CNN_corrector_phisat2": "https://github.com/spaceml-org/DTACSNet/releases/download/v1.0/CNN_corrector_phisat2.pt",
+    "CNN_corrector_planetscope": "https://github.com/spaceml-org/DTACSNet/releases/download/v1.0/CNN_corrector_planetscope.pt",
+    "CNN_corrector_probav": "https://github.com/spaceml-org/DTACSNet/releases/download/v1.0/CNN_corrector_probav.pt",
+    "Unet_corrector": "https://github.com/spaceml-org/DTACSNet/releases/download/v1.0/Unet_corrector.pt",
+    "Unet_corrector_phisat2": "https://github.com/spaceml-org/DTACSNet/releases/download/v1.0/Unet_corrector_phisat2.pt",
+    "Unet_corrector_planetscope": "https://github.com/spaceml-org/DTACSNet/releases/download/v1.0/Unet_corrector_planetscope.pt",
+    "Unet_corrector_probav": "https://github.com/spaceml-org/DTACSNet/releases/download/v1.0/Unet_corrector_probav.pt",
+    "Linear": "https://github.com/spaceml-org/DTACSNet/releases/download/v1.0/linear.pt", # run_SimpleCNN
 }
 
 def find_padding(v:int, divisor=32) -> Tuple[Tuple[int, int],slice]:
@@ -85,6 +85,7 @@ class ACModel:
         if path is None:
             path = os.path.join(self.dir_models, self.model_name+".pt")
             if not os.path.exists(path):
+                os.makedirs(self.dir_models, exist_ok=True)
                 download_weights(path, MODELS[self.model_name])
         
         with open(path,"rb") as fh:

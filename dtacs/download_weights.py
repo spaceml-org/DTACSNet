@@ -3,7 +3,7 @@ import shutil
 from tqdm import tqdm
 
 
-def download_weights(filename:str, link_weights:str, display_progress_bar:bool=True):
+def download_weights(filename:str, link_weights:str, display_progress_bar:bool=True) -> str:
     filename_tmp = filename+".tmp"
 
     with requests.get(link_weights, stream=True, allow_redirects=True) as r_link:
@@ -18,3 +18,5 @@ def download_weights(filename:str, link_weights:str, display_progress_bar:bool=T
                     f.write(chunk)
 
     shutil.move(filename_tmp, filename)
+
+    return filename
