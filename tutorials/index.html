@@ -12,14 +12,12 @@
         <meta name="author" content="Gonzalo Mateo-García">
       
       
-        <link rel="canonical" href="https://spaceml-org.github.io/DTACSNet/index.html">
+        <link rel="canonical" href="https://spaceml-org.github.io/DTACSNet/tutorials/index.html">
       
       
       
-        <link rel="next" href="tutorials/inference_Sentinel-2.html">
       
-      
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.47">
     
     
@@ -28,10 +26,10 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,17 +48,17 @@
       
     
     
-      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="assets/style.css">
+      <link rel="stylesheet" href="../assets/style.css">
     
-      <link rel="stylesheet" href="css/ansi-colours.css">
+      <link rel="stylesheet" href="../css/ansi-colours.css">
     
-      <link rel="stylesheet" href="css/jupyter-cells.css">
+      <link rel="stylesheet" href="../css/jupyter-cells.css">
     
-      <link rel="stylesheet" href="css/pandas-dataframe.css">
+      <link rel="stylesheet" href="../css/pandas-dataframe.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -86,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dtacsnet-onboard-cloud-detection-and-atmospheric-correction-with-efficient-deep-learning-models" class="md-skip">
+        <a href="#more-cloud-detection-viz" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +98,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="dtacs" class="md-header__button md-logo" aria-label="dtacs" data-md-component="logo">
+    <a href=".." title="dtacs" class="md-header__button md-logo" aria-label="dtacs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -225,13 +223,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="index.html" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../index.html" class="md-tabs__link">
           
   
     
@@ -251,7 +247,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="tutorials/inference_Sentinel-2.html" class="md-tabs__link">
+        <a href="inference_Sentinel-2.html" class="md-tabs__link">
           
   
     
@@ -286,7 +282,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="dtacs" class="md-nav__button md-logo" aria-label="dtacs" data-md-component="logo">
+    <a href=".." title="dtacs" class="md-nav__button md-logo" aria-label="dtacs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -313,8 +309,6 @@
       
   
   
-    
-  
   
   
     
@@ -327,22 +321,21 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="index.html" class="md-nav__link md-nav__link--active">
+            <a href="../index.html" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -354,7 +347,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Home
@@ -423,7 +416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tutorials/inference_Sentinel-2.html" class="md-nav__link">
+      <a href="inference_Sentinel-2.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -444,7 +437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tutorials/inference-Phi-Sat-II.html" class="md-nav__link">
+      <a href="inference-Phi-Sat-II.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -482,8 +475,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -492,18 +483,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#citation" class="md-nav__link">
+  <a href="#more-cloud-detection-viz" class="md-nav__link">
     <span class="md-ellipsis">
-      Citation
+      More Cloud Detection Viz
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#acknowledgments" class="md-nav__link">
+  <a href="#more-atmospheric-correction-viz" class="md-nav__link">
     <span class="md-ellipsis">
-      Acknowledgments
+      More Atmospheric Correction Viz
     </span>
   </a>
   
@@ -527,45 +518,29 @@
   
 
 
-<p><a href="https://doi.org/10.1109/JSTARS.2024.3480520"><img alt="Article DOI:10.1109/JSTARS.2024.3480520" src="https://img.shields.io/badge/Article%20DOI-10.1109%2FJSTARS.2024.3480520-blue" /></a> <a href="https://github.com/spaceml-org/DTACSNet/releases"><img alt="GitHub release (latest SemVer including pre-releases)" src="https://img.shields.io/github/v/release/spaceml-org/DTACSNet?sort=semver" /></a> <a href="https://pypi.org/project/dtacs/"><img alt="PyPI" src="https://img.shields.io/pypi/v/dtacs" /></a> <a href="https://pypi.org/project/dtacs/"><img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/dtacs" /></a> <a href="https://github.com/spaceml-org/DTACSNet/blob/main/LICENSE"><img alt="PyPI - License" src="https://img.shields.io/pypi/l/dtacs" /></a> <a href="https://spaceml-org.github.io/DTACSNet/"><img alt="docs" src="https://badgen.net/badge/docs/spaceml-org.github.io%2FDTACSNet/blue" /></a></p>
-<h1 id="dtacsnet-onboard-cloud-detection-and-atmospheric-correction-with-efficient-deep-learning-models"><a href="https://ieeexplore.ieee.org/document/10716772">DTACSNet: Onboard Cloud Detection and Atmospheric Correction With Efficient Deep Learning Models</a></h1>
-<p><em>Cesar Aybar</em><sup>§</sup>, <em>Gonzalo Mateo-García</em><sup>§</sup>, <em>Giacomo Acciarini</em><sup>§</sup>, <em>Vit Ruzicka</em>, <em>Gabriele Meoni</em>, <em>Nicolas Longepe</em>, <em>Luis Gómez-Chova</em> <sub><sup><em>§ development contribution</em></sup></sub></p>
-<p><a href="https://ieeexplore.ieee.org/document/10716772">10.1109/JSTARS.2024.3480520</a></p>
-<p>This repo contains an open implementation to run inference with DTACSNet models for atmospheric correction. <strong>This repo and trained models are released under a</strong> <a href="https://creativecommons.org/licenses/by-nc/4.0/legalcode.txt">Creative Commons non-commercial licence</a> 
-<img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc.png" alt="licence" width="60"/></p>
-<p>Install ⚙️:
-<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>dtacs
-</code></pre></div></p>
-<p>Run:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">dtacs.model_wrapper</span> <span class="kn">import</span> <span class="n">ACModel</span>
-<span class="n">model_atmospheric_correction</span> <span class="o">=</span> <span class="n">ACModel</span><span class="p">(</span><span class="n">model_name</span><span class="o">=</span><span class="s2">&quot;CNN_corrector_phisat2&quot;</span><span class="p">)</span>
-<span class="n">model_atmospheric_correction</span><span class="o">.</span><span class="n">load_weights</span><span class="p">()</span>
+  <h1>Index</h1>
 
-<span class="n">ac_output</span> <span class="o">=</span> <span class="n">model_atmospheric_correction</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">l1c_toa_s2</span><span class="p">)</span>
-</code></pre></div>
-<p><img src="assets/example_ac.png" alt="awesome atmospheric correction" width="100%">
-The figure above shows a sample of Sentinel-2 level 1C, DTACSNet model output and Sentinel-2 level 2A in the RGB (first row) and in the SWIR, NIR, Red (last row) composites.</p>
-<p>Tutorials:
- * <a href="https://spaceml-org.github.io/DTACSNet/tutorials/inference_Sentinel-2.html">Sentinel-2 inference tutorial</a>. <a href="https://colab.research.google.com/github/spaceml-org/DTACSNet/blob/main/tutorials/inference_Sentinel-2.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
- * <a href="https://spaceml-org.github.io/DTACSNet/tutorials/inference-Phi-Sat-II.html">PhiSat II inference tutorial</a>. <a href="https://colab.research.google.com/github/spaceml-org/DTACSNet/blob/main/tutorials/inference-Phi-Sat-II.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
-<h2 id="citation">Citation</h2>
-<p>If you find this work useful for your research, please consider citing <a href="https://ieeexplore.ieee.org/document/10716772">our work</a>:</p>
-<div class="highlight"><pre><span></span><code><span class="nc">@article</span><span class="p">{</span><span class="nl">aybar_onboard_2024</span><span class="p">,</span>
-<span class="w">    </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Onboard {Cloud} {Detection} and {Atmospheric} {Correction} {With} {Efficient} {Deep} {Learning} {Models}}</span><span class="p">,</span>
-<span class="w">    </span><span class="na">volume</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{17}</span><span class="p">,</span>
-<span class="w">    </span><span class="na">issn</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{2151-1535}</span><span class="p">,</span>
-<span class="w">    </span><span class="na">url</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{https://ieeexplore.ieee.org/abstract/document/10716772}</span><span class="p">,</span>
-<span class="w">    </span><span class="na">doi</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{10.1109/JSTARS.2024.3480520}</span><span class="p">,</span>
-<span class="w">    </span><span class="na">urldate</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{2024-11-12}</span><span class="p">,</span>
-<span class="w">    </span><span class="na">journal</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing}</span><span class="p">,</span>
-<span class="w">    </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Aybar, Cesar and Mateo-García, Gonzalo and Acciarini, Giacomo and Růžička, Vít and Meoni, Gabriele and Longépé, Nicolas and Gómez-Chova, Luis}</span><span class="p">,</span>
-<span class="w">    </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{2024}</span><span class="p">,</span>
-<span class="w">    </span><span class="na">note</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Conference Name: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing}</span><span class="p">,</span>
-<span class="w">    </span><span class="na">pages</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{19518--19529}</span>
-<span class="p">}</span>
-</code></pre></div>
-<h2 id="acknowledgments">Acknowledgments</h2>
-<p>DTACSNet has been developed by Trillium Technologies. It has been funded by ESA Cognitive Cloud Computing in Space initiative project number D-TACS I-2022-00380.</p>
+<h2 id="more-cloud-detection-viz">More Cloud Detection Viz</h2>
+<p><img alt="#8db5f0" src="https://placehold.co/15x15/8db5f0/8db5f0.png" /> Thick cloud
+<img alt="#8df094" src="https://placehold.co/15x15/8df094/8df094.png" /> Thin cloud 
+<img alt="#fff982" src="https://placehold.co/15x15/fff982/fff982.png" /> Cloud shadow</p>
+<p><img alt="image/png" src="https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/OfuPpQGUqOFyqB26YrlDF.png" /></p>
+<p><img alt="image/png" src="https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/5d0nbfVGvUQHuzNUKVqq5.png" /></p>
+<p><img alt="image/png" src="https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/b0I0ZAgFwsbUoJOLw5z6E.png" /></p>
+<p><img alt="image/png" src="https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/dZlcpUVXi6XJ7Xb0Ig9fm.png" /></p>
+<p><img alt="image/png" src="https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/phuSxN81fwl9oP-nck4av.png" /></p>
+<p><img alt="image/png" src="https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/ESof9Ota75fTgsT0sYNnl.png" /></p>
+<p><img alt="image/png" src="https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/TmKdQ6zwtZnD2xFBi-Jvf.png" /></p>
+<p><img alt="image/png" src="https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/-IE4TW5cjrKCOmbI0nq9w.png" /></p>
+<h2 id="more-atmospheric-correction-viz">More Atmospheric Correction Viz</h2>
+<p><img alt="image/png" src="https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/t_8CiBDUqBdafIV9w4ylK.png" /></p>
+<p><img alt="image/png" src="https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/JMyEEYn3aMJZrz3BDfvXs.png" /></p>
+<p><img alt="image/png" src="https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/-8oo6ke6GgRvaadsVrviq.png" /></p>
+<p><img alt="image/png" src="https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/fSue-_WxTla3IRH5VplGJ.png" /></p>
+<p><img alt="image/png" src="https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/STyfQtbNkdLEx-HBI3V-V.png" /></p>
+<p><img alt="image/png" src="https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/RvXFiBDUjd4wQcjz8pSEH.png" /></p>
+<p><img alt="image/png" src="https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/IiGIz-W8KMsxuMPeM3Ogh.png" /></p>
+<p><img alt="image/png" src="https://cdn-uploads.huggingface.co/production/uploads/6402474cfa1acad600659e92/PNco-ihWwqSSLICgOtKsB.png" /></p>
 
 
 
@@ -618,10 +593,10 @@ The figure above shows a sample of Sentinel-2 level 1C, DTACSNet model output an
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "navigation.expand", "navigation.indexes", "header.autohide"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "navigation.expand", "navigation.indexes", "header.autohide"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   </body>
