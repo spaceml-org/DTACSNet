@@ -27,7 +27,9 @@ ac_output = model_atmospheric_correction.predict(l1c_toa_s2)
 <img src="assets/example_ac.png" alt="awesome atmospheric correction" width="100%">
 The figure above shows a sample of Sentinel-2 level 1C, DTACSNet model output and Sentinel-2 level 2A in the RGB (first row) and in the SWIR, NIR, Red (last row) composites.
 
-See the [inference tutorial](https://spaceml-org.github.io/DTACSNet/tutorials/inference_Sentinel-2.html) for a complete example.
+Tutorials:
+ * [Sentinel-2 inference tutorial](https://spaceml-org.github.io/DTACSNet/tutorials/inference_Sentinel-2.html). [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/spaceml-org/DTACSNet/blob/main/tutorials/inference_Sentinel-2.ipynb)
+ * [PhiSat II inference tutorial](https://spaceml-org.github.io/DTACSNet/tutorials/inference-Phi-Sat-II.html). [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/spaceml-org/DTACSNet/blob/main/tutorials/inference-Phi-Sat-II.ipynb)
 
 
 ## Citation
