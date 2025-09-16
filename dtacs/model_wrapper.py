@@ -89,8 +89,8 @@ class ACModel:
                 download_weights(path, MODELS[self.model_name])
         
         with open(path,"rb") as fh:
-            weights =  torch.load(fh, map_location=self.device)
-        
+            weights = torch.load(fh, map_location=self.device, weights_only=False)
+
         self.model.load_state_dict(weights["state_dict"])
 
     def predict(self, tensor: np.array) -> np.array:
@@ -138,7 +138,7 @@ class CDModel(torch.nn.Module):
 
     def load_weights(self, path:str):
         with open(path, "rb") as fh:
-            weights =  torch.load(fh, map_location=self.device)
+            weights = torch.load(fh, map_location=self.device, weights_only=False)
         self.load_state_dict(weights["state_dict"])
 
     def predict(self, tensor: np.array) -> np.array:
